@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Mad to Giang</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./assets/music/happybirthday.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="background"></div>
+    <div class="container" id="mainContainer">
+        <div id="greeting" class="question">Hi bae</div>
+        <div class="question-container">
+            <div class="question" id="readyQuestion">
+                <div>Are you ready to receive love messages?</div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-yes" onclick="showBirthdayMessage()">Yes</button>
+                <button class="btn btn-no" id="btnNo" onmouseover="moveNoButton()">No</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="birthday-message" id="birthdayMessage">
+                <img src="./assets/gif/love.gif" alt="Birthday Image" class="birthday-image">
+                HOORAY! HAPPY BIRTHDAY MY LOVE!
+            </div>
+            <div class="password-note" id="passwordNote">Password = Sum of digits Day/Month/Year of Giang's Birthday, Mad's Birthday & Our Anniversary</div>
+            <form onsubmit="event.preventDefault(); checkPassword();">
+                <div class="password-container">
+                    <input type="password" id="passwordInput" class="password-input" placeholder="Nhập mật khẩu">
+                    <button type="submit" id="submitButton" class="submit-button">Enter</button>
+                </div>
+            </form>                  
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

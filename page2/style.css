@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: monospace;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+}
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px; /* Thêm khoảng cách phía dưới */
+}
+
+.context h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+
+.context h3 {
+    text-align: right; /* Căn lề trái cho văn bản */
+    color: #fff;
+    font-size: 20px;
+    max-width: 700px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Canh giữa thẻ h2 */
+    padding: 20px; /* Thêm padding nếu cần */
+    line-height: 1.2; /* Giảm khoảng cách giữa các dòng */
+    font-weight: lighter; /* Làm cho font chữ không bị in đậm */
+}
+
+
+
+.area {
+    background: #b63c79; /* Đổi màu sang hồng pastel */
+    background: -webkit-linear-gradient(to left, #ffb3cc, #ff9eb8); /* Gradient màu hồng pastel */
+    width: 100%;
+    height: 100vh;
+}
+
+.heart-icon {
+    color: #ff7474; /* Màu hồng pastel hoặc màu khác tùy chọn */
+    font-size: 1.1em; /* Điều chỉnh kích thước của biểu tượng */
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: no-repeat center center;
+    background-size: cover;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    background-image: url('../assets/images/1.jpg');
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+/* Lặp lại cho mỗi hình ảnh, chỉnh sửa đường dẫn, vị trí, kích thước và thời gian chờ */
+.circles li:nth-child(2) {
+    background-image: url('../assets/images/2.jpg');
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+/* Tương tự cho các thẻ li khác, thay đổi đường dẫn hình ảnh phù hợp */
+
+.circles li:nth-child(3){
+    background-image: url('../assets/images/3.jpg');
+    left: 70%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    background-image: url('../assets/images/4.jpg');
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    background-image: url('../assets/images/5.jpg');
+    left: 65%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    background-image: url('../assets/images/6.jpg');
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    background-image: url('../assets/images/7.jpg');
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    background-image: url('../assets/images/8.jpg');
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    background-image: url('../assets/images/9.jpg');
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    background-image: url('../assets/images/10.jpg');
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+    background-image: url('../assets/images/11.jpg');
+    left: 60%; /* Vị trí ngẫu nhiên */
+    width: 70px; /* Kích thước ngẫu nhiên */
+    height: 70px; 
+    animation-delay: 5s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(12) {
+    background-image: url('../assets/images/12.jpg');
+    left: 50%; /* Vị trí ngẫu nhiên */
+    width: 100px; /* Kích thước ngẫu nhiên */
+    height: 100px;
+    animation-delay: 3s;
+    animation-duration: 25s;
+}
+
+.circles li:nth-child(13) {
+    background-image: url('../assets/images/13.jpg');
+    left: 5%; /* Vị trí ngẫu nhiên */
+    width: 140px; /* Kích thước ngẫu nhiên */
+    height: 140px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(14) {
+    background-image: url('../assets/images/14.jpg');
+    left: 30%; /* Vị trí ngẫu nhiên */
+    width: 110px; /* Kích thước ngẫu nhiên */
+    height: 110px;
+    animation-delay: 4s;
+    animation-duration: 22s;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
